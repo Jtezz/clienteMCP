@@ -1,0 +1,22 @@
+<div class="container display-block">
+  <h1 class="titulo" >Graficos Dinamicos</h1>
+  <!-- Guardar un grafico en un card para que se vea mas pequeño y ajustar su tampoño-->
+  <div class="flex">
+    <div class="flex-item">
+      <canvas baseChart width="200" height="200"
+                  [datasets]="lineChartData"
+                  [labels]="lineChartLabels"
+                  [options]="lineChartOptions"
+                  [colors]="lineChartColors"
+                  [legend]="lineChartLegend"
+                  [chartType]="lineChartType"
+                  [plugins]="lineChartPlugins"></canvas>
+    </div>
+  </div>
+</div>
+<div *ngFor="let dato of datos">
+<p>{{dato.id}}</p>
+<p>{{dato.ph}}</p>
+<p>{{dato.temp}}</p>
+<p>{{dato.fecha}}</p>
+</div>

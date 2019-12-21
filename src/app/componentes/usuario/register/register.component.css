@@ -1,0 +1,7 @@
+#register{
+    padding-top: 5%;
+}
+.form-control.login-user{
+    padding-top: 5%;
+    border: 0px solid #fff !important;
+}
